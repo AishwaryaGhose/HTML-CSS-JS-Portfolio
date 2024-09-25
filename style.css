@@ -139,6 +139,20 @@ a:hover{
     transform: none;
 } */
 
+/* section */
+
+section{
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section_container{
+    display: flex;
+}
+
 /* section profile */
 
 #profile{
@@ -149,15 +163,15 @@ a:hover{
 }
 .section_container_img{
     display: flex;
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     margin: auto 0  ;
 }
 
 .section_container_text{
     text-align: center;
     align-self: center;
-    margin: 4rem;
+    /* margin: 4rem; */
 }
 
 .section_container_text p{
@@ -197,13 +211,13 @@ a:hover{
 .btn{
     font-weight: 600;
     padding: 1rem;
-    transition: all 3ms ease;
+    transition: all 300ms ease;
     width: 8rem;
     border-radius: 2rem;
 }
 
 .btn1, .btn2{
-    background-color: rgb(53, 53, 53) 0.1rem solid;
+    border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn1:hover, .btn2:hover{
@@ -211,7 +225,7 @@ a:hover{
 }
 
 .btn1:hover, .btn2{
-    background-color: rgb(53,53,53);
+    background: rgb(53,53,53);
     color: white;;
 }
 
@@ -219,23 +233,23 @@ a:hover{
     background: none;
 }
 .btn2:hover{
-    background: #000000;
+    background: rgb(0,0,0);
+}
+
+
+.section_container_btn{
+    gap: 1rem;
 }
 
 /* about section */
 
 #about{
     position: relative;
-    justify-content: center;
-    margin-bottom: 4rem;
+    /* justify-content: center;
+    margin-bottom: 4rem; */
 }
 
-/* .section_container{
-    display: flex;
-    align-items: center;
-    padding-left: 2rem;
-    padding-top: 2rem;
-} */
+
 .about_containers{
     gap: 2rem;
     margin-top: 2rem;
@@ -244,14 +258,15 @@ a:hover{
 .about_details_container{
     justify-content: center;
     flex-direction: column;
-    padding-left: 2rem; 
-    text-align: justify;
 }
 
 .about_details_container, .about_containers{
     display: flex;
 }
 
+.text_container{
+    text-align: justify;
+}
 .about_pic{
     border-radius: 2rem;
 }
@@ -273,8 +288,7 @@ a:hover{
     text-align: center;
 }
 .section_container{
-    display: flex;
-    padding-left: 2rem;
+    
     gap: 4rem;
     height: 80%;
 }
@@ -283,7 +297,7 @@ a:hover{
 
 #experience{
     position: relative;
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
 }
 .experience_sub_title{
     color: rgb(85, 85, 85);
@@ -299,9 +313,9 @@ a:hover{
 
 .article_container{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     flex-wrap: wrap;
-    text-align: initial;
+    text-align:left;
     gap: 2.5rem;
     justify-content: space-around;
 }
@@ -309,13 +323,14 @@ a:hover{
 article{
     display: flex;
     width: 10rem;
-    justify-content: space-around;
+    justify-content: initial;
     gap: 0.5rem;
 }
 
 article .icon{
     cursor: default;
 }
+
 
 /* Projects Section */
 
@@ -324,8 +339,8 @@ article .icon{
 }
 
 .color_container{
-    background-color: rgb(163, 163, 163);
-    background: white;
+    border-color: rgb(163, 163, 163);
+    background: rgb(250,250,250);
 }
 
 .project_img{
@@ -341,7 +356,7 @@ article .icon{
 
 .project_btn{
     color: black;
-    background-color: rgb(163, 163, 163);
+    border-color: rgb(163, 163, 163);
 }
 
 /* Conatact Section */
@@ -359,7 +374,7 @@ article .icon{
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(163, 163, 163);
-    background: white;
+    background: rgb(250,250,250);
     margin: 2rem auto;
     padding: 0.5rem;
 }
@@ -367,7 +382,7 @@ article .icon{
 .contact_info_container{
     display: flex;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     gap: 0.5rem;
     margin: 1rem;
 }
@@ -388,14 +403,7 @@ article .icon{
 
 footer{
     height: 26vh;
-    width:100%;
     margin: 0 1rem;
-    background-color:white;
-    /* background: white; */
-}
-footer a{
-   color: #000000;
-
 }
 footer p{
     text-align: center;
